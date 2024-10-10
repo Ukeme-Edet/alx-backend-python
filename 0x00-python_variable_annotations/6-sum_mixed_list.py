@@ -7,7 +7,7 @@ from typing import List
 
 def sum_mixed_list(mxd_lst: List[int | float]) -> float:
     """
-    Sums up a list of numbers
+    Returns ths sums of a list of numbers
 
     Args:
         mxd_lst (List[int | float]): The list of numbers to be summed
