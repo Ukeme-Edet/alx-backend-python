@@ -10,6 +10,13 @@ wait_random = __import__("0-basic_async_syntax").wait_random
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     Asynchronously waits for a random delay between 0 and `max_delay` seconds.
+
+    Args:
+        n (int): The number of times to call `wait_random`.
+        max_delay (int): The maximum number of seconds to wait.
+
+    Returns:
+        List[float]: A list of random delays.
     """
     import asyncio
 
