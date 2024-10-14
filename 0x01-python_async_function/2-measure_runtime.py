@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-This module contains a function that measures the runtime of an async coroutine.
+This module contains a function that measures the runtime of an async\
+    coroutine.
 """
 wait_n = __import__("1-concurrent_coroutines").wait_n
 
