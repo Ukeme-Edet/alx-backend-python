@@ -36,12 +36,12 @@ class TestAccessNestedMap(TestCase):
             ("http://holberton.io", {"payload": False}),
         ]
     )
-    def test_get_json(self, path, expected):
+    def test_get_json(self, test_url, test_payload):
         """Test get_json"""
         mock = Mock()
-        mock.json.return_value = expected
+        mock.json.return_value = test_payload
         with patch("requests.get", return_value=mock):
-            self.assertEqual(get_json(path), expected)
+            self.assertEqual(get_json(test_url), test_payload)
 
 
 if __name__ == "__main__":
